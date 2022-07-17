@@ -1,0 +1,41 @@
+"the order *literally does not matter*"
+
+open `math` as math "built-in desmos math functions"
+
+"global can only be defined once"
+"this is where all the graph settings are (and tickers)"
+global Global{}
+
+function(a, b, c) CoolFunc{
+    if(a > c) do{
+        return b * (10 * math.random())
+    } else do{
+        return c - (5 * math.random())
+    }
+}
+
+variable CoolVarA{5}
+
+variable CoolVarB{7}
+
+variable CoolVarC{4}
+
+variable VariVar{
+    if(CoolVarA > CoolVarB) do{
+        return CoolVarB * (10 * math.random())
+    } else do{
+        return CoolVarC - (5 * math.random())
+    }
+}
+
+action() CoolFuncAction{"something"}
+
+action CoolAction{"something"}
+
+image(`filename.png`) CoolImage{
+    center = point(0,0)
+    angle = 0 "pi is '\pi\' and e is '\e\'"
+    opacity = 1
+    width = 10
+    "height = 10('image height'/'image width')"
+}
