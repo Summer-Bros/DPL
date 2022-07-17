@@ -1,7 +1,7 @@
 # global can only be defined once
 # this is where all the graph settings are (and tickers)"
 
-global Global{}
+ticker Ticker()
 
 function CoolFunc(a, b, c) {
     if (a > c) do {
