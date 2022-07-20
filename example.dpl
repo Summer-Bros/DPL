@@ -1,9 +1,9 @@
-"the order *literally does not matter*"
+`the order *does **not** matter*`
 
-open `math` as math "built-in desmos math functions"
+open 'ma th' as math `built-in desmos math functions`
 
-"global can only be defined once"
-"this is where all the graph settings are (and tickers)"
+`global can only be defined once`
+`this is where all the graph settings are`
 global Global{}
 
 function(a, b, c) CoolFunc{
@@ -28,14 +28,18 @@ variable VariVar{
     }
 }
 
-action() CoolFuncAction{"something"}
+action() CoolFuncAction{`something`}
 
-action CoolAction{"something"}
+action CoolAction{`something`}
 
-image(`filename.png`) CoolImage{
+color CoolHSVColor{hsv(60,1,1)}
+
+color CoolRGBColor{rgb(0,127,255)}
+
+image('filename.png') CoolImage{
     center = point(0,0)
-    angle = 0 "pi is '\pi\' and e is '\e\'"
+    angle = 0 `pi is '\pi\' and e is '\e\'`
     opacity = 1
     width = 10
-    "height = 10('image height'/'image width')"
+    `height = 10('image height'/'image width')`
 }
