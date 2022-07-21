@@ -7,6 +7,7 @@ local function lex(contents)
         local quotea = false
         local quoteb = false
         local quotec = false
+        local list = false
         for pos = 1, contents:len() do
             char = contents:sub(pos, pos)
             if ((char == " ") or (char == "\n")) and (not (quotea or quoteb or quotec)) then
@@ -17,7 +18,7 @@ local function lex(contents)
                 if ((char == "\"") and not (quoteb or quotec)) then
                     quotea = not quotea
                 end
-                if ((char == "\'") and not (quotea or quotec)) then
+                if ((char == "'") and not (quotea or quotec)) then
                     quoteb = not quoteb
                 end
                 if ((char == "`") and not (quotea or quoteb)) then
