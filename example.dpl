@@ -1,6 +1,6 @@
-`the order *does **not** matter*`
+`the order *does **not** matter,* functionally speaking.`
 
-open 'ma th' as math `built-in desmos math functions`
+open 'math' as math `built-in desmos math functions`
 
 `global can only be defined once`
 `this is where all the graph settings are`
