@@ -31,9 +31,9 @@ local function lex(contents)
 
     do
         local new_words = {}
-        for _, word in ipairs(words) do
-            if word:sub(1, 1) ~= "`" then
-                table.insert(new_words, word)
+        for i = 1, #words do
+            if not words[i]:find("`") then
+                table.insert(new_words, words[i])
             end
         end
         words = new_words
