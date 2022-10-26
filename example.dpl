@@ -1,45 +1,40 @@
-`the order *does **not** matter,* functionally speaking.`
+from 'desmos' open 'math'
 
-open 'math' as math `built-in desmos math functions`
-
-`global can only be defined once`
-`this is where all the graph settings are`
 global Global{}
 
-function(a, b, c) CoolFunc{
-    if(a > c) do{
-        return b * (10 * math.random())
-    } else do{
-        return c - (5 * math.random())
+function coolFunc(a, b, c) {
+    if(a > c) {
+        b * (10 * math.random())
+    } else {
+        c - (5 * math.random())
     }
 }
 
-variable CoolVarA{5}
+variable coolVarA = 5
 
-variable CoolVarB{7}
+variable coolVarB = 7
 
-variable CoolVarC{4}
+variable coolVarC = 10
 
-variable VariVar{
-    if(CoolVarA > CoolVarB) do{
-        return CoolVarB * (10 * math.random())
-    } else do{
-        return CoolVarC - (5 * math.random())
+variable variVar = {
+    if(coolVarA > coolVarB) {
+        coolVarB * (10 * math.random())
+    } else {
+        coolVarC - (5 * math.random())
     }
 }
 
-action() CoolFuncAction{`something`}
+action coolFuncAction() = `something`
 
-action CoolAction{`something`}
+action coolAction = `something`
 
-color CoolHSVColor{hsv(60,1,1)}
+color coolHSVColor = hsv(60,1,1)
 
-color CoolRGBColor{rgb(0,127,255)}
+color coolRGBColor = rgb(0,127,255)
 
-image('filename.png') CoolImage{
+image coolImage('filename.png') {
     center = point(0,0)
-    angle = 0 `pi is '\pi\' and e is '\e\'`
+    angle = (0 * math.pi) / 1
     opacity = 1
     width = 10
-    `height = 10('image height'/'image width')`
 }
