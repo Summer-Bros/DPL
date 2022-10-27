@@ -48,7 +48,8 @@ color coolHSVColor = hsv(60,1,1)
 
 color coolRGBColor = rgb(0,127,255)
 
-image coolImage('image.png') {
+image coolImage {
+    file = 'image.png'
     center = point(0,0)
     width = 10
 }
