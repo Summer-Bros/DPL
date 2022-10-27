@@ -16,11 +16,14 @@ function coolFunction(a, b, c) {
     }
 }
 
+`not included note`
+"included note"
+
 variable coolVariableA = 5
 
 variable coolVariableB = 7
 
-variable coolVariableC = 10
+variable coolVariableC = 10 "note bound to coolVariableC"
 
 variable variableVariable = {
     if(coolVariableA > coolVariableB) {
