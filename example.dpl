@@ -1,6 +1,8 @@
-from 'desmos' open 'math'
+from 'desmos' open 'math' as math
 
-global Global{}
+global {}
+
+ticker {}
 
 function coolFunc(a, b, c) {
     if(a > c) {
@@ -10,21 +12,21 @@ function coolFunc(a, b, c) {
     }
 }
 
-variable coolVarA = 5
+variable coolVariableA = 5
 
-variable coolVarB = 7
+variable coolVariableB = 7
 
-variable coolVarC = 10
+variable coolVariableC = 10
 
-variable variVar = {
-    if(coolVarA > coolVarB) {
-        coolVarB * (10 * math.random())
+variable variableVariable = {
+    if(coolVariableA > coolVariableB) {
+        coolVariableB * (10 * math.random())
     } else {
-        coolVarC - (5 * math.random())
+        coolVariableC - (5 * math.random())
     }
 }
 
-action coolFuncAction() = `something`
+action coolFunctionAction() = `something`
 
 action coolAction = `something`
 
@@ -34,7 +36,5 @@ color coolRGBColor = rgb(0,127,255)
 
 image coolImage('filename.png') {
     center = point(0,0)
-    angle = (0 * math.pi) / 1
-    opacity = 1
     width = 10
 }
