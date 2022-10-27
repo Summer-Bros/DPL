@@ -1,14 +1,18 @@
-from 'desmos' open 'math' as math
+from 'desmos' load 'math' as math
 
 global {}
 
-ticker {}
+ticker(500) {
+    coolAction
+}
 
-function coolFunc(a, b, c) {
+function coolFunction(a, b, c) {
     if(a > c) {
         b * (10 * math.random())
-    } else {
+    } elseif(a < c) {
         c - (5 * math.random())
+    } else {
+        a + (2 * math.random())
     }
 }
 
@@ -21,20 +25,30 @@ variable coolVariableC = 10
 variable variableVariable = {
     if(coolVariableA > coolVariableB) {
         coolVariableB * (10 * math.random())
-    } else {
+    } elseif(coolVariableA < coolVariableB) {
         coolVariableC - (5 * math.random())
+    } else {
+        coolVariableA + (2 * math.random())
     }
 }
 
-action coolFunctionAction() = `something`
+action coolFunctionAction(a, b, c) = {
+    coolVariableA -> a,
+    coolVariableB -> b,
+    coolVariableC -> c
+}
 
-action coolAction = `something`
+action coolAction = {
+    coolVariableA -> math.random(),
+    coolVariableB -> math.random(),
+    coolVariableC -> math.random()
+}
 
 color coolHSVColor = hsv(60,1,1)
 
 color coolRGBColor = rgb(0,127,255)
 
-image coolImage('filename.png') {
+image coolImage('image.png') {
     center = point(0,0)
     width = 10
 }
